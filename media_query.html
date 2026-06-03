@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      box-sizing: border-box;
+      transition: 1s;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    h3 {
+      margin: 0.5rem 0;
+      text-align: left;
+    }
+
+    p {
+      text-align: left;
+      margin-bottom: 1px;
+    }
+
+    .container {
+      width: 100%;
+      padding: 0 15px;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+
+    .wda {
+      width: 100%;
+      padding: 10px;
+      margin: 1.5% 0;
+      text-align: center;
+    }
+
+    .wda img {
+      width: 250px;
+    }
+
+    .wda p {
+      text-align: center;
+    }
+
+    .html {
+      width: 100%;
+      padding: 10px;
+      margin: 1.5% 0;
+      text-align: center;
+    }
+
+    .css {
+      width: 100%;
+      padding: 10px;
+      margin: 1.5% 0;
+      text-align: center;
+    }
+
+
+    .js {
+      width: 100%;
+      padding: 10px;
+      margin: 1.5% 0;
+      text-align: center;
+    }
+
+
+    .jq {
+      width: 100%;
+      padding: 10px;
+      margin: 1.5% 0;
+      text-align: center;
+    }
+
+    .jq img {
+      width: 250px;
+    }
+
+    .bs {
+      width: 100%;
+      padding: 10px;
+      margin: 1.5% 0;
+      text-align: center;
+    }
+
+    .sass {
+      width: 100%;
+      padding: 10px;
+      margin: 1.5% 0;
+      text-align: center;
+    }
+
+    .sass img {
+      width: 250px;
+    }
+
+    .vjs {
+      width: 100%;
+      padding: 10px;
+      margin: 1.5% 0;
+      text-align: center;
+    }
+
+    .vjs img {
+      width: 250px;
+    }
+
+    /* 平板 576px - 991px */
+    @media(min-width:576px) {
+      .container {
+        width: 95%;
+      }
+
+      h3 {
+        text-align: center;
+        font-family: Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+      }
+
+      p {
+        display: none;
+      }
+
+      .wda {
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+      }
+
+      .wda img {
+        width: 200px;
+      }
+
+      .wda p {
+        display: block;
+      }
+
+      .html {
+        width: 180px;
+        position: absolute;
+        top: 150px;
+        left: 120px;
+        transform: translate(-50%, -50%);
+      }
+
+      .css {
+        width: 180px;
+        position: absolute;
+        top: 100px;
+        left: 390px;
+        transform: translate(-50%, -50%);
+      }
+
+      .js {
+        width: 180px;
+        position: absolute;
+        top: 400px;
+        left: 180px;
+        transform: translate(-50%, -50%);
+      }
+
+      .jq {
+        width: 160px;
+        position: absolute;
+        top: 520px;
+        left: 390px;
+        transform: translate(-50%, -50%);
+      }
+
+      .bs {
+        width: 180px;
+        position: absolute;
+        top: 100px;
+        right: 200px;
+        transform: translate(-50%, -50%);
+      }
+
+      .sass {
+        width: 180px;
+        position: absolute;
+        top: 250px;
+        right: 0px;
+        transform: translate(-50%, -50%);
+      }
+
+      .vjs {
+        width: 160px;
+        height: 60px;
+        position: absolute;
+        top: 470px;
+        right: 150px;
+        transform: translate(-50%, -50%);
+      }
+
+      hr {
+        position: absolute;
+        border: none;
+        border-top: 2px solid #ccc;
+        /* 線條顏色與粗細 */
+        transform-origin: left center;
+        /* 讓旋轉的軸心放在線條的最左端 */
+      }
+
+      hr:nth-of-type(1) {
+        top: 230px;
+        left: 200px;
+        width: 320px;
+        transform: rotate(10deg);
+      }
+
+      hr:nth-of-type(2) {
+        top: 150px;
+        left: 470px;
+        width: 100px;
+        transform: rotate(30deg);
+      }
+
+      hr:nth-of-type(3) {
+        top: 390px;
+        left: 270px;
+        width: 250px;
+        transform: rotate(-12deg);
+      }
+
+      hr:nth-of-type(4) {
+        top: 470px;
+        left: 450px;
+        width: 120px;
+        transform: rotate(-40deg);
+      }
+
+      hr:nth-of-type(5) {
+        top: 200px;
+        right: 450px;
+        width: 100px;
+        transform: rotate(-30deg);
+      }
+
+      hr:nth-of-type(6) {
+        top: 290px;
+        right: 280px;
+        width: 240px;
+        transform: rotate(-5deg);
+      }
+
+      hr:nth-of-type(7) {
+        top: 370px;
+        right: 360px;
+        width: 170px;
+        transform: rotate(30deg);
+      }
+    }
+
+    @media(min-width:1500px) {
+      .container {
+        width: 95%;
+      }
+
+      h3 {
+        text-align: center;
+        font-family: Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+      }
+
+      p {
+        display: none;
+      }
+
+      .wda {
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+      }
+
+      .wda img {
+        width: 200px;
+      }
+
+      .wda p {
+        display: block;
+      }
+
+      .html {
+        width: 180px;
+        position: absolute;
+        top: 180px;
+        left: 120px;
+        transform: translate(-50%, -50%);
+      }
+
+      .css {
+        width: 180px;
+        position: absolute;
+        top: 100px;
+        left: 390px;
+        transform: translate(-50%, -50%);
+      }
+
+      .js {
+        width: 180px;
+        position: absolute;
+        top: 450px;
+        left: 180px;
+        transform: translate(-50%, -50%);
+      }
+
+      .jq {
+        width: 160px;
+        position: absolute;
+        top: 580px;
+        left: 480px;
+        transform: translate(-50%, -50%);
+      }
+
+      .bs {
+        width: 180px;
+        position: absolute;
+        top: 100px;
+        right: 250px;
+        transform: translate(-50%, -50%);
+      }
+
+      .sass {
+        width: 180px;
+        position: absolute;
+        top: 230px;
+        right: 0px;
+        transform: translate(-50%, -50%);
+      }
+
+      .vjs {
+        width: 160px;
+        height: 60px;
+        position: absolute;
+        top: 470px;
+        right: 150px;
+        transform: translate(-50%, -50%);
+      }
+
+      hr {
+        position: absolute;
+        border: none;
+        border-top: 2px solid #ccc;
+        transform-origin: left center;
+      }
+
+      hr:nth-of-type(1) {
+        top: 260px;
+        left: 200px;
+        width: 490px;
+        transform: rotate(5deg);
+      }
+
+      hr:nth-of-type(2) {
+        top: 150px;
+        left: 470px;
+        width: 240px;
+        transform: rotate(18deg);
+      }
+
+      hr:nth-of-type(3) {
+        top: 450px;
+        left: 270px;
+        width: 430px;
+        transform: rotate(-12deg);
+      }
+
+      hr:nth-of-type(4) {
+        top: 520px;
+        left: 550px;
+        width: 170px;
+        transform: rotate(-30deg);
+      }
+
+      hr:nth-of-type(5) {
+        top: 230px;
+        right: 490px;
+        width: 220px;
+        transform: rotate(-20deg);
+      }
+
+      hr:nth-of-type(6) {
+        top: 300px;
+        right: 280px;
+        width: 420px;
+        transform: rotate(-5deg);
+      }
+
+      hr:nth-of-type(7) {
+        top: 400px;
+        right: 400px;
+        width: 290px;
+        transform: rotate(20deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="wda">
+        <img src="./images/wda.png">
+        <h1>泰山職訓局</h1>
+        <h2>從零開始的網頁設計課程</h2>
+        <p>
+          轉職網頁開發人員 掌握就業必備技能<br>
+          由淺入深學習技術 強化職場的競爭力</p>
+      </div>
+      <hr>
+      <div class="html">
+        <img src="./images/html.png">
+        <h3>Html</h3>
+        <p>
+          HTML元素是構建網站的基石。HTML允許嵌入圖像與對象，並且可以用於建立互動式表單，它被用來結構化資訊——例如標題、段落和列表等等，也可用來在一定程度上描述文件的外觀和語意。HTML的語言形式為尖括號包圍的HTML元素（如
+          <html>），瀏覽器使用HTML標籤和指令碼來詮釋網頁內容，但不會將它們顯示在頁面上。
+        </p>
+      </div>
+      <hr>
+      <div class="css">
+        <img src="./images/css.png">
+        <h3>CSS3</h3>
+        <p>階層式樣式表（英語：Cascading Style
+          Sheets，縮寫：CSS；又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣式表、階層式樣式表）是一種用來為結構化文件（如HTML文件或XML應用）添加樣式（字體、間距和顏色等）的電腦語言，由W3C定義和維護。</p>
+      </div>
+      <hr>
+      <div class="js">
+        <img src="./images/js.png">
+        <h3>JavaScript</h3>
+        <p>
+          JavaScript（通常縮寫為JS）是一門基於原型和頭等函式的多範式進階直譯程式語言[9][10]，它支援物件導向程式設計、指令式編程和函數式程式設計。它提供方法來操控文字、陣列、日期以及正規表示式等。不支援I/O，比如網路、儲存和圖形等，但這些都可以由它的宿主環境提供支援。
+        </p>
+      </div>
+      <hr>
+      <div class="jq">
+        <img src="./images/jq.png">
+        <h3>jQuery</h3>
+        <p>jQuery是開源軟體，使用MIT授權條款授權。[5]
+          jQuery的語法設計使得許多操作變得容易，如操作文件（document）、選擇文件物件模型（DOM）元素、建立動畫效果、處理事件、以及開發Ajax程式。jQuery也提供了給開發人員在其上建立外掛程式的能力。這使開發人員可以對底層互動與動畫、進階效果和進階主題化的組件進行抽象化。模組化的方式使jQuery函式庫能夠建立功能強大的動態網頁以及網路應用程式。
+        </p>
+      </div>
+      <hr>
+      <div class="bs">
+        <img src="./images/bs.png">
+        <h3>Bootstrap</h3>
+        <p>
+          Bootstrap是一組用於網站和網路應用程式開發的開源前端（所謂「前端」，指的是展現給終端使用者的介面。與之對應的「後端」是在伺服器上面執行的代碼）框架，包括HTML、CSS及JavaScript的框架，提供字體排印、表單、按鈕、導航及其他各種元件及Javascript擴充套件，旨在使動態網頁和Web應用的開發更加容易。
+        </p>
+      </div>
+      <hr>
+      <div class="sass">
+        <img src="./images/sass.png">
+        <h3>Sass</h3>
+        <p>
+          Sass是一個將指令碼解析成CSS的手稿語言，即SassScript。Sass包括兩套語法。最開始的語法叫做「縮排語法」，與Haml類似[5]，使用縮排來區分代碼塊，並且用換行將不同規則分隔開。而較新的語法叫做「SCSS」，使用和CSS一樣的塊語法，即使用大括號將不同的規則分開，使用分號將具體的樣式分開。通常情況下，這兩套語法通過.sass和.scss兩個副檔名區分開。
+        </p>
+      </div>
+      <hr>
+      <div class="vjs">
+        <img src="./images/vue.png">
+        <h3>Vue.js</h3>
+        <p>Vue.js是一款JavaScript前端框架，旨在更好地組織與簡化Web開發。Vue所關注的核心是MVC模式中的視圖層，同時，它也能方便地取得資料更新，並通過組件內部特定的方法實現視圖與模型的互動。</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
